@@ -1,0 +1,45 @@
+@border-color:#b5bcc7;
+@boxbodercolor:red;
+@midbordercolor:blue;
+.wrap{
+    width:1000px;
+    height:300px;
+    overflow:hidden;
+    border:1px solid @border-color;
+    .wrapLeft{
+        width:300px;
+        float: left;
+        height: 100px;
+        border:1px dashed @boxbodercolor;
+        .text{
+            color:lightsalmon;
+            font-size:24px;
+            font-family: arial;
+        }
+    }
+    .wrapMid{
+        width:250px;
+        float: left;
+        height: 200px;
+        border:1px solid @midbordercolor;
+    }
+    .wrapRight{
+        width:400px;
+        float: right;
+        height: 300px;
+        border:1px solid greenyellow;
+        .ulList{
+            list-style: none;
+            width:100px;
+            margin:10px auto;
+            li{
+                height: 44px;
+                width:100px;
+                text-align: center;
+                line-height:44px;
+                border-bottom:1px solid red;
+            }
+        }
+    }
+}
+
